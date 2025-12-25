@@ -2,3 +2,4 @@ Flask
 reportlab
 supabase
 python-dotenv
+gunicorn
