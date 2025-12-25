@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice Sent – Cogninode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 520px;
+            margin: 80px auto;
+            background: #ffffff;
+            padding: 36px;
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #22c55e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+
+        p {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .invoice-box {
+            background: #f9fafb;
+            border: 1px dashed #d1d5db;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-bottom: 28px;
+            color: #111827;
+        }
+
+        .invoice-box span {
+            font-weight: 700;
+            color: #4f46e5;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #4f46e5;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        a:hover {
+            background: #4338ca;
+        }
+
+        .footer-note {
+            margin-top: 22px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="icon">✓</div>
+
+    <h1>Invoice Sent Successfully</h1>
+    <p>Your invoice has been generated and emailed.</p>
+
+    <div class="invoice-box">
+        Invoice Number: <span>{{ invoice_no }}</span>
+    </div>
+
+    <a href="/">Create Another Invoice</a>
+
+    <div class="footer-note">
+        A copy has been sent to Cogninode and the client (if provided).
+    </div>
+
+</div>
+
+</body>
+</html>
