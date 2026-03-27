@@ -1,4 +1,5 @@
 Flask
+Flask-WTF==1.2.2
 reportlab
 supabase
 python-dotenv
